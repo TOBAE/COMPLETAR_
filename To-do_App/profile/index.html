@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar | Landing Page</title>
+    <!-- Link to CSS File -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Container -->
+    <div id="container-box">
+
+        <!-- Header Section -->
+        <header>
+
+            <div>
+                <i class="fa-solid fa-bars icon-head"></i>
+            </div>
+
+            <div>
+                <p>PROFILE</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-house icon-head"></i>
+            </div>
+
+        </header>
+
+        <!-- Image Section -->
+        <section id="image">
+
+            <div id="profile-pic">
+
+                <img src="./images/blank-profile-picture.png" alt="blank-profile-picture" id="photo"><br>
+                <label for="file" id="uploadBtn">Choose Photo</label><br>
+                <input type="file" name="file" id="file">
+           
+            </div>
+    
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+
+            <h1>Lily Thomas</h1>
+            <p>lilythomas@gmail.com</p>
+        
+        </section>
+
+        <!-- Tasks Section -->
+        <section id="tasks">
+
+            <div class="task-box">
+
+                <div>
+
+                    <p>Total tasks</p>
+                    <p>20</p>
+                
+                </div>
+
+                <div>
+                    <ion-icon name="remove-circle-outline" class="non"></ion-icon>
+                </div>
+
+            </div>
+
+            <div class="task-box">
+                
+                <div>
+
+                    <p>Completed</p>
+                    <p>5</p>
+                
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-circle-check task-icon"></i>
+                </div>
+            
+            </div>
+        
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings">
+
+            <div><p>Settings</p></div>
+
+            <div id="settings-container">
+
+                <div class="settings-box">
+
+                    <div><p>Notifications</p></div>
+                    <div><i class="fa-solid fa-arrow-right settings-icon"></i></div>
+                
+                </div>
+    
+                <div class="settings-box">
+
+                    <div><p>Language</p></div>
+                    <div><i class="fa-solid fa-arrow-right settings-icon"></i></div>
+
+                </div>
+                
+                <div class="settings-box">
+
+                    <div><p>Sound</p></div>
+                    <div><i class="fa-solid fa-arrow-right settings-icon"></i></div>
+
+                </div>
+
+            </div>
+            
+        </section>
+        
+    </div>
+
+
+
+    <!-- Link to JS File -->
+    <script src="./script.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8e4fb64db4.js" crossorigin="anonymous"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  background-color: #e9e5e5;
+}
+.container-md {
+  margin: 0 auto;
+  /* max-width: 400px; */
+}
+.demo {
+  padding-bottom: 2.5rem;
+  background-color: #d9d9d9;
+}
+.box {
+  overflow: hidden;
+  background-color: #d9d9d9;
+  position: relative;
+  /* border: 3px solid black; */
+}
+h1 {
+  color: #b72f00;
+}
+.img-fluid{
+  height: 270px;
+  width: 250px;
+}
+
+.carousel-indicators li {
+  background-color: #50a09f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #2d2e2d;
+}
+h2 {
+  color: #b72f00;
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
