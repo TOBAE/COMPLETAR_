@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d3b7f83939.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="hero">
+        <form  onsubmit=" sendEmail(); reset(); return false; " >
+            <h3>GET IN TOUCH</h3>
+           <div class="row">
+            <div class="input_group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="fas fa-user"></i> Your Name</label>
+             </div>
+  
+             <div class="input_group">
+              <input type="number" id="number" required>
+              <label for="number"><i class="fas fa-phone-alt"></i>Phone No.</label>
+           </div>
+
+           </div>
+
+         <div class="input_group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fas fa-envelope"></i>Email Id</label>
+         </div>
+
+         <div class="input_group">
+            <textarea  id="message" rows="8" required></textarea>
+            <label for="message"><i class="fas fa-comments"></i>Message</label>
+         </div>
+
+         <button type="submit">Submit<i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+
+    const form = document.getElementById('form')
+
+    function sendEmail(){
+        // e.preventDefault();
+
+        Email.send({
+        SecureToken : "3dab8514-e12a-486f-ba4c-c1283c8e773d",
+        To : 'assumptaodibeli@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById("name").value
+        + "<br> Number: " + document.getElementById("number").value
+        + "<br> Email: " + document.getElementById("email").value
+        + "<br> Message: " + document.getElementById("message").value
+        
+    }).then(
+      message => alert('Message Sent Successfully')
+    );
+}
+
+    // form.addEventListener('submit', sendEmail);
+
+     </script>
+</body>
+</html>

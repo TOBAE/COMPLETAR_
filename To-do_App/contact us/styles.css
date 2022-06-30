@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), #b93000), url(img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input_group{
+    flex-basis: 48%;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+}
+
+form h3{
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.input_group{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    /* cursor: text; */
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+label .fas, button .fas{
+    margin: 0 5px;
+}
