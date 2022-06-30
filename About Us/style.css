@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Logo*/
+#logo{
+    margin-left: 42%;
+}
+
+h2{
+    text-align: center;
+    color: #b72f00;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+span{
+    color: #b72f00;
+}
+
+p{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Footer*/
+
+button{
+    margin-left: 39%;
+    width: 300px;
+    height: 35px;
+    background: #C3522B;
+    box-shadow: 0px 4.12761px 4.12761px rgba(0, 0, 0, 0.25);
+    transform: rotate(0.07deg);
+    border-radius: 20px;
+    border: solid #C3522B;
+}
+
+.button{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Social-icons*/
+    .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .twitter-icon{
+        align-self: flex-end;
+        margin-right: 10px;
+    }
+
+    .facebook-icon{
+        align-self: flex-end;
+        margin-left: 10px;
+    }
+
+    @media(max-width:1080px){
+        #logo{
+            margin-left: 38%;
+        }
+
+        button{
+            margin-left: 36%;
+        }
+    }
+
+    @media(max-width:878px){
+        #logo{
+            margin-left: 36%;
+        }
+
+        button{
+            margin-left: 33%;
+        }
+    }
+
+    @media(max-width:768px){
+        #logo{
+            margin-left: 34%;
+        }
+
+        button{
+            margin-left: 31%;
+        }
+
+        p{
+            width: 85%;
+            text-align: justify;
+        }
+    }
+
+    @media(max-width:680px){
+        #logo{
+            margin-left: 32%;
+        }
+
+        button{
+            margin-left: 28%;
+        }
+    }
+
+    @media(max-width:500px){
+        #logo{
+            margin-left: 21%;
+        }
+
+        button{
+            margin-left: 15%;
+        }
+
+        p{
+            width: 87%;
+        }
+    }
+
+    @media(max-width:375px){
+        #logo{
+            margin-left: 18%;
+        }
+
+        button{
+            margin-left: 10%;
+        }
+    }
+
+    @media(max-width:320px){
+        #logo{
+            margin-left: 13%;
+        }
+
+        button{
+            width: 250px;
+            margin-left: 10%;
+        }
+    }
+
+    @media(min-width:2000px){
+        #logo{
+            margin-left: 45%;
+        }
+
+        button{
+            margin-left: 44%;
+        }
+    }
+    
+

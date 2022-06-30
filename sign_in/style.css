@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'Flutterwave', sans-serif;
+    margin-top: 4em;
+    
+}
+
+
+.form h2{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form{
+    margin-top: 17em;
+    background-color: #fffffa;
+    color: black;
+    min-width: 30%;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 30px 72px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+    box-shadow:  4px 6px 4px 4px rgba(131, 137, 160, 0.05);
+}
+
+/* for the error message that would be displayed if a user submits without entering email */
+#error, .error_2{
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: inherit;
+    text-align: left;
+    row-gap: 0;
+    margin-top: -15px;
+    display: none;
+}
+
+.incorrect_password{
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: inherit;
+    text-align: left;
+    margin-top: -50px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.password{
+    color: #ff0000;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -50px;
+    margin-bottom: 40px;
+    visibility: hidden;
+}
+
+section{
+    height: 54vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form a{
+    text-align: left;
+    margin-top: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.form a:hover{
+    text-align: left;
+    text-decoration: underline;
+    color: #333138;
+}
+.form .pass{
+    margin-bottom: 50px;
+}
+
+.form .email{
+    margin-bottom: 20px;
+}
+
+.register{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4ea090;
+}
+
+.pro a{
+    font-size: 14px;
+    color: #0d4d72;
+}
+
+.pro a:hover{
+    color: black;
+    text-decoration: underline;
+
+}
+
+input{
+    border-top:0;
+    border-bottom: 1px solid #333138 ;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0; 
+    
+}
+
+input:focus{
+    outline: none;
+    border-top: 0;
+    border-bottom: 1px solid #333138 ;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 0; 
+}
+.form button{
+    padding: 7px;
+    font-weight: 700;
+    background-color:#b93000 ;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 3px rgba(48, 43, 43, 0.3);
+    margin-bottom: 10px;
+
+}
+
+#btn{
+    background-color: #e2663f;
+    padding: 10px;
+    box-shadow: 1px 3px rgba(48, 43, 43, 0.2);
+}
+.form button:hover, #btn:hover{
+    opacity: 0.7;
+}
+
+@media only screen and (max-width:768px){
+    .form{
+        width: 90%;
+    }
+    body{
+        margin-top: 2em;
+    }
+    
+    .form a{
+        text-align: center;
+    }
+
+
+    section{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}
