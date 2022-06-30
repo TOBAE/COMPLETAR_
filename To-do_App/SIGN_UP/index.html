@@ -1,35 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Completar - SignIn Page</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/x-icon" sizes="16x16" href="/favicon-16x16.png">
 </head>
 <body>
 
-    <form action="#" name="myForm" onclick="Validate()">
+    <form  id="form">
     <section>
     <div class="form">
        <a href="../index.html"> <img src="./Completar-logo.jpeg" alt="the brand logo"></a>
 
             <h2>SIGN UP</h2>
-        <input type="text" id="name" placeholder="Name" class="email">
-        <p id="error">Field cannot be empty</p>
+            <input type="text" id="username" name="username" placeholder="Name" class="email">
+            <div class="error"></div>
+    
+            <input type="text" id="email" name="email" placeholder="Email" class="email">
+            <div class="error"></div>
+    
+            
+            <input type="password" id="password" name="password" placeholder="Password" class="pass">
+            <div class="error"></div>
 
-        <input type="text" id="email" placeholder="Email" class="email">
-        <p id="error">Field cannot be empty</p>
 
-        
-        <input type="password" id="password" placeholder="Password" class="pass">
-        <p class="password">Field cannot be empty</p> 
-        <p class="incorrect_password">Incorrect Password</p>
-
-
-        <button type="submit" id="btn" >Register</button>
+       <button type="submit" id="btn">Register<button>
         <p>or</p>
+
 
 
         <button>Sign up with Apple</button>
